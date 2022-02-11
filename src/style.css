@@ -5,9 +5,16 @@
 
 /* == Root == */
 :root {
-  /*=Color=*/
+  /*=Color Basic=*/
   --clr-white: #fff;
   --clr-black: #000;
+  --clr-black-2: #0D0D0D; 
+  --clr-primary: #AB04D9; 
+  --clr-secondary: #0CF2B1; 
+  /*= Colors UX Style =*/
+  --clr-ux-one: #45214A; 
+  --clr-ux-two: #323050; 
+  --clr-ux-tree: ;#5D8A66 
   /*=Typography=*/
   --font-family-Poppins: "Poppins", sans-serif;
   /*=Font Size=*/
