@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Christiano0407/videoMusicWeb/issues"
   },
-  "homepage": "https://github.com/Christiano0407/videoMusicWeb#readme"
+  "homepage": "https://github.com/Christiano0407/videoMusicWeb#readme",
+  "dependencies": {
+    "@barba/core": "^2.9.7"
+  }
 }
