@@ -1,0 +1,26 @@
+{
+  "name": "videomusicweb",
+  "version": "1.0.0",
+  "description": "project video web and landing page",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/videoMusicWeb.git"
+  },
+  "keywords": [
+    "web",
+    "landing",
+    "page",
+    "animation",
+    "responsive"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/videoMusicWeb/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/videoMusicWeb#readme"
+}
