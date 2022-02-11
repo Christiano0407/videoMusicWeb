@@ -5,8 +5,27 @@
 
 /* == Root == */
 :root {
+  /*=Color=*/
   --clr-white: #fff;
   --clr-black: #000;
+  /*=Typography=*/
+  --font-family-Poppins: "Poppins", sans-serif;
+  /*=Font Size=*/
+  --font-size-extra: 3rem;
+  --font-size-title: 2.4rem;
+  --font-size-Big: 1.8rem;
+  --font-size-Medium: 1.6rem;
+  --font-size-medium-plus: 1.5rem;
+  --font-size-small: 1.2rem;
+  -font-size-small-plus: 0.8rem;
+  /*=Margins=*/
+  --margin-top: 2rem;
+  --margin-bottom: 2rem;
+  --margin-left: 1rem;
+  --margin-right: 1rem;
+  --margin: 0 auto;
+  /*=Text=*/
+  --letter-spacing: 0.1rem;
 }
 /* === General Project ===*/
 * {
@@ -16,6 +35,28 @@
 }
 html {
   font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+p,
+span {
+  letter-spacing: 0.1rem;
+}
+h1 {
+  text-transform: uppercase;
 }
 body {
   width: 100%;
