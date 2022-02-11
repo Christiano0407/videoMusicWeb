@@ -1,4 +1,7 @@
 /*  == Import ==*/
+@import url("/src/css/mediaQueries.css");
+@import url("/src/css/frameworks.css");
+@import url("/src/css/components.css");
 
 /* == Root == */
 :root {
