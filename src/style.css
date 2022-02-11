@@ -17,6 +17,7 @@
   --clr-ux-tree: ;#5D8A66 
   /*=Typography=*/
   --font-family-Poppins: "Poppins", sans-serif;
+  --font-family-changelin: changeling-neo,sans-serif;
   /*=Font Size=*/
   --font-size-extra: 3rem;
   --font-size-title: 2.4rem;
@@ -67,4 +68,8 @@ h1 {
 }
 body {
   width: 100%;
+ /*  font-family: changeling-neo,sans-serif;
+font-weight: 700;
+font-style: normal; */
 }
+/* = Page= *
