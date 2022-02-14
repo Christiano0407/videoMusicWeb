@@ -66,17 +66,23 @@ span {
 h1 {
   text-transform: uppercase;
 }
+/* =Animation =*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 body {
   width: 100%;
   height: 100vh;
   position: fixed;
 }
-/* video {
-  width: 100%
-  height: 100%
-  position: absolute; 
-  z-index: 1; 
-} */
+
 /* = Page= */
 .background__image {
   width: 100%;
@@ -97,6 +103,9 @@ body {
                                     "aside main main main";
   position: relative;
   z-index: 10; */
+}
+.hidden {
+  display: none;
 }
 /* .menu__active {
   display: none;
@@ -158,7 +167,9 @@ margin-left: 1rem;
   color: var(--clr-white);
   font-size: 15px;
 } */
-
+.wrapper__burger {
+  display: none;
+}
 /*Aside*/
 .aside {
  /*  grid-area: aside; */
