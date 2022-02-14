@@ -232,7 +232,7 @@
     height: 100%;
     object-fit: cover;
     background-position: left;
-    filter: brightness(0.5);
+    /*  filter: brightness(0.5); */
   }
 
   .page {
@@ -314,6 +314,12 @@
     height: 100%;
     border-radius: 1rem;
     padding: 1rem;
+    /* background: rgba(248, 244, 244, 0.2); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(4px); */
+    -webkit-backdrop-filter: blur(4px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .main__background .text {
     width: 100%;
@@ -326,7 +332,7 @@
     /*  height: 100%; */
     text-align: center;
     text-transform: uppercase;
-    font-size: 15rem;
+    font-size: 12rem;
     font-weight: 900;
     background-image: url("/src/assets/img/mus10.jpg");
     background-size: contain;
