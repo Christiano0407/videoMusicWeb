@@ -299,6 +299,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
   }
   .active .menu__active {
     font-size: 2.5rem;
@@ -374,17 +375,86 @@
     font-weight: 700;
     font-size: 1.8rem;
   }
+  .aside__text--plus p::after {
+    content: " ";
+    display: flex;
+    width: 25%;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+  }
 
   .main {
     width: 100%;
     height: 100%;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
   }
-  .modal__up {
-    display: none;
+  .main__background {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+  .main__background .text {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    font-size: 2rem;
+  }
+  .main__neon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+  .neon-title {
+    font-size: 8rem;
+    color: var(--clr-secondary);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .neon-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+    z-index: 2;
+    position: relative;
+    bottom: 200px;
   }
   .main__twoImg {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .main__twoImg img {
+    object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    filter: brightness(0.5);
+  }
+  .modal__up {
     display: none;
   }
 }
