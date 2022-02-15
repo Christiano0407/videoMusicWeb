@@ -18,7 +18,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
     gap: 0.5rem;
     position: relative;
     z-index: 10;
@@ -91,11 +91,12 @@
   }
   .burger-list a {
     color: #000;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
   }
   .burger-list a:hover {
-    color: #333;
+    color: #000;
+    opacity: 0.5;
   }
   .wrapper__burger.active {
     display: grid;
