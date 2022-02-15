@@ -1,6 +1,6 @@
 /* = Media Queries = */
 
-/*Mobile ====*/
+/*Mobile ==== ================= =========== >>>>*/
 @media (max-width: 319px) {
 }
 
@@ -9,8 +9,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-position: top;
     filter: brightness(0.5);
+    background-position: bottom;
   }
 
   .page {
@@ -114,14 +114,130 @@
   aside {
     display: none;
   }
+  .main {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .main .main__background {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  .main .main__background .text {
+    font-family: var(--font-family-changelin);
+    color: #fff;
+    filter: opacity(0.5);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+  .main .main__neon {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .main__neon .neon-title {
+    font-size: 6rem;
+    position: relative;
+    top: 9rem;
+    /*   margin-left: 1rem; */
+    color: var(--clr-secondary);
+    width: 100%;
+    font-weight: 900;
+    font-family: var(--font-family-changelin);
+    text-align: center;
+  }
+  .main__neon .neon-text {
+    width: 100%;
+    font-size: 3rem;
+    position: relative;
+    color: var(--clr-primary);
+    font-weight: 400;
+    /* filter: opacity(0.5); */
+    top: 10rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .neon-text::after {
+    content: " ";
+    display: flex;
+    border: 2px solid var(--clr-primary);
+    margin-top: 1.5rem;
+    width: 25%;
+    position: absolute;
+    left: 35%;
+    border-radius: 1rem;
+  }
+  .main__numbers {
+    display: none;
+  }
+  .main__model {
+    display: none;
+  }
+  .modal__up {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__up .swipe {
+    position: relative;
+    top: 3rem;
+    animation: upOn 1.5s 1s ease-in-out infinite;
+  }
+  @keyframes upOn {
+    to {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    from {
+      transform: translateY(0px);
+    }
+  }
+
+  .swipe i {
+    color: #fff;
+    font-size: 9rem;
+  }
+  .modal__up .swipe-text {
+    position: relative;
+    top: 3rem;
+  }
+  .swipe-text .text-go {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    top: 20px;
+  }
 }
-/*Tablet ====*/
+/*Tablet ==== ================ ============ >>>>>>>>*/
 @media (min-width: 481px) and (max-width: 768px) {
   .background__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-position: top;
+    background-position: right;
     filter: brightness(0.5);
     background-repeat: no-repeat;
   }
@@ -227,8 +343,11 @@
     grid-row: 2 / 3;
     top: 0;
   }
+  .modal__up {
+    display: none;
+  }
 }
-/*Laptop====*/
+/*Laptop==== ============= ========== ========= >>>>>*/
 @media (min-width: 769px) and (max-width: 1024px) {
   .background__image {
     width: 100%;
@@ -458,15 +577,18 @@
   .wrapper__burger {
     display: none;
   }
+  .modal__up {
+    display: none;
+  }
 }
-/*Large Screen ====*/
+/*Large Screen ==== ========== =============== >>>>>>*/
 @media (min-width: 1024px) and (max-width: 1200px) {
   .background__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: left;
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
   }
 
   .page {
@@ -689,15 +811,18 @@
   .wrapper__burger {
     display: none;
   }
+  .modal__up {
+    display: none;
+  }
 }
-/*Extra Large Screen ====*/
+/*Extra Large Screen ==== ============ =========== >>>>>>>*/
 @media (min-width: 1200px) and (max-width: 1920px) {
   .background__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: left;
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
   }
 
   .page {
@@ -918,6 +1043,9 @@
     display: none;
   }
   .wrapper__burger {
+    display: none;
+  }
+  .modal__up {
     display: none;
   }
 }
