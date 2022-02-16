@@ -21,8 +21,73 @@ btnMenu.addEventListener("click", () => {
 });
 
 // ==== Barba Js =======
+
+function pageTransition() {
+  const tl = gsap.timeline();
+
+  tl.to("ul.transition li", {
+    duration: 0.5,
+    scaleY: 1,
+    transformOrigin: " bottom left",
+    stagger: 0.2,
+  });
+  tl.to("ul.transition li", {
+    duration: 0.5,
+    scaleY: 1,
+    transformOrigin: "bottom  left",
+    stagger: 0.1,
+  });
+}
+
+function contentAnimation() {
+  const tl = gsap.timeline();
+
+  tl.from(".page", {
+    duration: 1.5,
+    translateY: 50,
+    opacity: 0,
+  });
+  tl.fromTo(
+    "#imgTwo",
+    {
+      clipPath: "polygon(0 0, 100% 0,  100% 100%, 0% 100%)",
+      delay: 1,
+      duration: 1,
+    },
+    "-=1.1"
+  );
+}
+
+function delay(n) {
+  n = n || 2000;
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}
+
 barba.init({
-  transition: [{}],
+  sync: true,
+  transition: [
+    {
+      async leave(data) {
+        const done = this.async();
+
+        PageTransition();
+        await delay(1500);
+        done();
+      },
+
+      async enter(data) {
+        contentAnimation();
+      },
+
+      async once(data) {
+        contentAnimation();
+      },
+    },
+  ],
 });
 
 // =========  Animation GSAP =================
@@ -36,12 +101,12 @@ tl.fromTo(
   " < "
 );
 // = Page =
-tl.fromTo(
+/* tl.fromTo(
   ".page",
   { opacity: 0 },
   { opacity: 1, delay: 1, duration: 1 },
   " < "
-);
+); */
 tl.fromTo(
   ".navigation",
   { y: "-200", opacity: 0 },
@@ -69,12 +134,12 @@ tl.fromTo(
   " < "
 );
 
-tl.fromTo(
+/* tl.fromTo(
   "#imgTwo",
   { x: "400", opacity: 0 },
   { x: "0", opacity: 1, delay: 1.5, duration: 1.5 },
   " < "
-);
+); */
 tl.fromTo(
   "#mainNeon",
   { x: "-400", opacity: 0 },
