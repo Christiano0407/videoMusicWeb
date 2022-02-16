@@ -78,6 +78,13 @@ tl.fromTo(
   " < ",
   "-=1"
 );
+tl.fromTo(
+  "#modelText",
+  { x: "300", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  "<",
+  "-=1"
+);
 
 // ======= Animation DOM Javascript =======
 const textOne = document.getElementById("textOne");
