@@ -5,7 +5,7 @@ console.log(btnMenu);
 const listMenu = document.querySelector(".wrapper__burger");
 const burgerList = document.querySelector(".burger-list");
 // Events ==>
-// ==== BTN Menu ====
+// =========  BTN Menu Animation ============
 btnMenu.addEventListener("click", () => {
   console.log("click burger");
   /* list.classList.remove("hidden"); */
@@ -70,6 +70,13 @@ tl.fromTo(
   { x: "400", opacity: 0 },
   { x: "0", opacity: 1, delay: 1.5, duration: 1.5 },
   " < "
+);
+tl.fromTo(
+  "#mainNeon",
+  { x: "-400", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  " < ",
+  "-=1"
 );
 
 // ======= Animation DOM Javascript =======
