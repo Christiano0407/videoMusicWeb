@@ -1,0 +1,43 @@
+/* ==========Animation 320px a 480px =========*/
+/*Text*/
+@keyframes text {
+  from {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/*Title*/
+@keyframes title {
+  from,
+  50% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/*Neon Text*/
+@keyframes neonText {
+  from,
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Modal Up*/
+@keyframes up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -21,7 +21,7 @@ btnMenu.addEventListener("click", () => {
 });
 
 console.groupEnd();
-// =====  Animation GSAP =======
+// =========  Animation GSAP =================
 const tl = gsap.timeline({ default: { ease: "power2.out" } });
 
 // = Background =
