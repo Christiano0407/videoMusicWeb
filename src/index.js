@@ -20,7 +20,11 @@ btnMenu.addEventListener("click", () => {
   }
 });
 
-console.groupEnd();
+// ==== Barba Js =======
+barba.init({
+  transition: [{}],
+});
+
 // =========  Animation GSAP =================
 const tl = gsap.timeline({ default: { ease: "power2.out" } });
 
@@ -97,3 +101,5 @@ tl.fromTo(
 const textOne = document.getElementById("textOne");
 console.log(textOne);
 textOne.style.color = "#0CF2B1";
+
+console.groupEnd();
