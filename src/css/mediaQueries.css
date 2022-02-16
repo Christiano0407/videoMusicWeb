@@ -414,6 +414,7 @@
     position: relative;
     top: 150px;
     font-size: 2rem;
+    animation: backText 1.5s 1.5s ease-in-out forwards;
   }
   .main__neon {
     grid-column: 1 / 2;
@@ -430,6 +431,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: neonOne 1.5s 1.5s ease-in-out forwards;
   }
   .neon-text {
     width: 100%;
@@ -439,6 +441,7 @@
     z-index: 2;
     position: relative;
     bottom: 200px;
+    animation: neonMore 1.5s 1.5s ease-in-out forwards;
   }
   .main__twoImg {
     grid-column: 1 / 2;
@@ -617,6 +620,8 @@
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
+
+    animation: backTextTwo 1.5s 1.5s ease-in-out forwards;
   }
   .main__neon {
     grid-column: 1 / 2;

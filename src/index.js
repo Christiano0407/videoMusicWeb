@@ -50,3 +50,29 @@ tl.fromTo(
   { y: "0", opacity: 1, delay: 1.5, duration: 1.5 },
   "<"
 );
+// Aside
+tl.fromTo(
+  "#asideBar",
+  { x: "-300", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1.5, duration: 1 },
+  " < "
+);
+// Main ===
+tl.fromTo(
+  "#background",
+  { opacity: 0 },
+  { opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+
+tl.fromTo(
+  "#imgTwo",
+  { x: "400", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+
+// ======= Animation DOM Javascript =======
+const textOne = document.getElementById("textOne");
+console.log(textOne);
+textOne.style.color = "#0CF2B1";
