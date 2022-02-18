@@ -84,4 +84,18 @@ body {
   width: 100%;
   margin: 0;
   font-family: var(--font-family-Poppins);
+  background-color: var(--clr-white);
+}
+.header {
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid #000;
+}
+.header .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

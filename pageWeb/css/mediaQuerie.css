@@ -8,6 +8,27 @@
 }
 /*= SM  (Mobile First) =*/
 @media (max-width: 480px) {
+  .header {
+    width: 100%;
+    height: 3rem;
+  }
+  .navigation {
+    width: 100%;
+    height: 100%;
+  }
+  .nav__logo {
+  }
+  .nav__name {
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__user {
+  }
+  .nav__battery {
+  }
+  .nav__burger {
+  }
 }
 @media (min-width: 479px) and (max-width: 767px) {
 }
