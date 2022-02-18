@@ -84,7 +84,8 @@ body {
   width: 100%;
   margin: 0;
   font-family: var(--font-family-Poppins);
-  background-color: var(--clr-white);
+  /*  background-color: var(--clr-white); */
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 .header {
   width: 100%;
@@ -99,3 +100,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* =Main =*/
+.main {
+  width: 100%;
+  display: grid;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem; */
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+}
+
+/*=Footer=*/

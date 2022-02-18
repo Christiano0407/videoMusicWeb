@@ -17,17 +17,76 @@
     height: 100%;
   }
   .nav__logo {
+    width: 3rem;
+    height: 3rem;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  .nav__logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   .nav__name {
+    position: relative;
+    right: 5rem;
+  }
+  .nav__name span {
+    color: #fff;
+    font-weight: 700;
+  }
+  .nav__icon span {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   .nav__icon {
     display: none;
   }
-  .nav__user {
+  .nav__user .users {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: 5rem;
+  }
+  .users img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   .nav__battery {
+    width: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 2rem;
+  }
+  .nav__battery a {
+    font-size: 1.2rem;
   }
   .nav__burger {
+    position: absolute;
+    right: 1rem;
+  }
+  .nav__burger a {
+    font-size: 1.8rem;
+  }
+  .aside {
+    display: none;
+  }
+  .aside__two {
+    display: none;
+  }
+  /*main*/
+  .main {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
   }
 }
 @media (min-width: 479px) and (max-width: 767px) {
