@@ -1,0 +1,85 @@
+/* = Import =*/
+@import url("/pageWeb/css/mediaQuerie.css");
+@import url("/pageWeb/css/components.css");
+
+/* = Root =*/
+:root {
+  /*=Color Basic=*/
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-black-2: #0d0d0d;
+  --clr-primary: #ab04d9;
+  --clr-secondary: #0cf2b1;
+  /*= Colors UX Style =*/
+  --clr-ux-one: #45214a;
+  --clr-ux-two: #323050;
+  --clr-ux-tree: #5d8a66;
+  /*=Typography=*/
+
+  /*=Font Size=*/
+  --font-size-extra: 3rem;
+  --font-size-title: 2.4rem;
+  --font-size-Big: 1.8rem;
+  --font-size-Medium: 1.6rem;
+  --font-size-medium-plus: 1.5rem;
+  --font-size-small: 1.2rem;
+  -font-size-small-plus: 0.8rem;
+  /*=Margins=*/
+  --margin-top: 2rem;
+  --margin-bottom: 2rem;
+  --margin-left: 1rem;
+  --margin-right: 1rem;
+  --margin: 0 auto;
+  /*=Text=*/
+  --letter-spacing: 0.1rem;
+}
+
+/* = General Style =*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+/* =Animation =*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+p,
+span {
+  letter-spacing: 0.1rem;
+}
+h1 {
+  text-transform: uppercase;
+}
+body {
+  width: 100%;
+  margin: 0;
+}

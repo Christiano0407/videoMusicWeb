@@ -1,0 +1,23 @@
+/* = Media Queries = */
+
+/*= XXS (Watch) =*/
+@media (max-width: 240px) {
+}
+/*= XS (Mobile First)=*/
+@media (max-width: 360px) {
+}
+/*= SM  (Mobile First) =*/
+@media (max-width: 480px) {
+}
+/*= MD  (Tablet) =*/
+@media (min-width: 768px) {
+}
+/*=  LG (Laptop) =*/
+@media (min-width: 1024px) {
+}
+/*=  LG (Laptop and Screen) =*/
+@media (min-width: 1440px) {
+}
+/*=  LG (Laptop and Screen and More) =*/
+@media (min-width: 1920px) {
+}
