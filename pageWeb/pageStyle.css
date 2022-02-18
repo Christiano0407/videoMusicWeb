@@ -15,7 +15,8 @@
   --clr-ux-two: #323050;
   --clr-ux-tree: #5d8a66;
   /*=Typography=*/
-
+  --font-family-Poppins: "Poppins", sans-serif;
+  --font-family-Play: "Play", sans-serif;
   /*=Font Size=*/
   --font-size-extra: 3rem;
   --font-size-title: 2.4rem;
@@ -82,4 +83,5 @@ h1 {
 body {
   width: 100%;
   margin: 0;
+  font-family: var(--font-family-Poppins);
 }

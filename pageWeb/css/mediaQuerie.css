@@ -9,8 +9,12 @@
 /*= SM  (Mobile First) =*/
 @media (max-width: 480px) {
 }
+@media (min-width: 479px) and (max-width: 767px) {
+}
 /*= MD  (Tablet) =*/
 @media (min-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 1023px) {
 }
 /*=  LG (Laptop) =*/
 @media (min-width: 1024px) {
